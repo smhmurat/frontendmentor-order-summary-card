@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: #dee8fe;
+    overflow: hidden;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #9ba1b1;
+}
+
+button {
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+
+.card {
+    width: 25rem; 
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 5rem auto;
+    padding-bottom: 1.25rem;
+}
+
+.card-image {
+    width: 100%;
+    /* object-fit: cover; */
+    overflow-x: hidden;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.card-body-plan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f8f9fe;
+    margin: 1.5rem;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card-plan-title {
+    margin-left: 1rem;
+}
+
+.card-plan-button {
+    position: absolute;
+    right: 1.25rem;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+.card-plan-button:hover {
+    text-decoration: none;
+    color:hsl(245, 75%, 70%)
+}
+
+.card-body-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-payment {
+    margin: 25px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.btn-payment:hover {
+    background-color: hsl(245, 75%, 70%);
+    color: hsl(225, 100%, 98%);
+}
+
+.btn-cancel {
+    
+}
+
+.attribution { 
+    position: sticky;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    font-size: 11px; 
+    text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 20rem;
+    }
+}
